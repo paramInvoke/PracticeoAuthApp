@@ -15,5 +15,11 @@
     "mocha": "^10.2.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "start": "node dist/server.js",
+    "test": "mocha --require ts-node/register --timeout 10000 test/*.spec.ts",
+    "dev": "nodemon — exec ts-node src/app/index.ts",
+    "build": "tsc --project ./"
   }
 }
